@@ -1,6 +1,6 @@
 # Interoperability of Go Argon2 packages
 
-This repository meant to test compliance of [official Go implementation](https://pkg.go.dev/golang.org/x/crypto/argon2) of Argon2 and Go bindings of [P-H-C-/phc-winner-argon2](https://github.com/P-H-C/phc-winner-argon2) shared by [tvdburgt](<(https://pkg.go.dev/github.com/tvdburgt/go-argon2)>) which is originally written in C.
+This repository meant to test compliance of [official Go implementation](https://pkg.go.dev/golang.org/x/crypto/argon2) of Argon2 and Go bindings of [P-H-C-/phc-winner-argon2](https://github.com/P-H-C/phc-winner-argon2) shared by [tvdburgt](https://pkg.go.dev/github.com/tvdburgt/go-argon2) which is originally written in C.
 
 It compares hashes of top 1000 commonly used passwords produced with both packages with different cost combinations of memory, iterations, threads and length. Than counts the mismatches per combo.
 
