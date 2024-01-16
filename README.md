@@ -4,6 +4,10 @@ This repository meant to test compliance of [official Go implementation](https:/
 
 It compares hashes of top 1000 commonly used passwords produced with both packages with different cost combinations of memory, iterations, threads and length. Than counts the mismatches per combo.
 
+## Motivation
+
+Having a database of user passwords all hashed non-standardly would make it impossible in future to migrate newer programming languages.
+
 ## Dependencies
 
 -   https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10-million-password-list-top-1000000.txt save as `10-million-password.txt`
