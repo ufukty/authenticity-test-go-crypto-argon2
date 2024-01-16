@@ -17,6 +17,7 @@ func loadMostUsedPasswords(n int) ([][]byte, error) {
 	if err != nil {
 		return nil, fmt.Errorf("opening file: %w", err)
 	}
+	defer f.Close()
 	pwds := [][]byte{}
 	scanner := bufio.NewScanner(f)
 	for scanner.Scan() {
@@ -69,6 +70,7 @@ func Test_MostUsedPasswords(t *testing.T) {
 	if err != nil {
 		t.Fatal(fmt.Errorf("creating log file in temp: %w", err))
 	}
+	defer l.Close()
 	fmt.Println("using log file:", l.Name())
 	var logger = log.New(l, "", 0)
 
