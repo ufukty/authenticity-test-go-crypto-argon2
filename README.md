@@ -1,4 +1,4 @@
-# Interoperability of Go Argon2 packages
+# Testing the interoperability of x/crypto/argon2 package with P-H-C implementation
 
 This repository meant to test compliance of [official Go implementation](https://pkg.go.dev/golang.org/x/crypto/argon2) of Argon2 and Go bindings of [P-H-C-/phc-winner-argon2](https://github.com/P-H-C/phc-winner-argon2) shared by [tvdburgt](https://pkg.go.dev/github.com/tvdburgt/go-argon2) which is originally written in C.
 
